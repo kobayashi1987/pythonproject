@@ -95,6 +95,8 @@ def main():
 
     print('Staff data has been collected, saved to a JSON file, and inserted into the database.')
 
+    print("test github")
+
 
 if __name__ == '__main__':
     main()
