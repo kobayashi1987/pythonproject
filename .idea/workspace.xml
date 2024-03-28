@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dce5be7c-0ab1-4a30-8039-2e202a799898" name="Changes" comment="commit test github">
-      <change afterPath="$PROJECT_DIR$/function_module.py" afterDir="false" />
+    <list default="true" id="dce5be7c-0ab1-4a30-8039-2e202a799898" name="Changes" comment="table creation with schemas, and table deletion&#10;&#10;next step: data collection - json - mysql&#10;&#10;next step: read data-adjust data">
+      <change afterPath="$PROJECT_DIR$/courses_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/departments_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_officer_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_supervisor_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staff_course_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staff_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +45,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.connection_cext.executor": "Run",
-    "Python.database_connect_check.executor": "Run",
+    "Python.database_connect_check.executor": "Debug",
     "Python.input.executor": "Debug",
     "Python.main.executor": "Debug",
     "Python.test.executor": "Debug",
@@ -112,7 +117,8 @@
       <workItem from="1711543476156" duration="22000" />
       <workItem from="1711548291603" duration="36000" />
       <workItem from="1711548395128" duration="650000" />
-      <workItem from="1711549082907" duration="5479000" />
+      <workItem from="1711549082907" duration="6217000" />
+      <workItem from="1711637234995" duration="1351000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -130,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711206968263</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="table creation with schemas, and table deletion&#10;&#10;next step: data collection - json - mysql&#10;&#10;next step: read data-adjust data">
+      <option name="closed" value="true" />
+      <created>1711556535692</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711556535692</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,14 +165,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit test" />
     <MESSAGE value="commit test github" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit test github" />
+    <MESSAGE value="table creation with schemas, and table deletion&#10;&#10;next step: data collection - json - mysql&#10;&#10;next step: read data-adjust data" />
+    <option name="LAST_COMMIT_MESSAGE" value="table creation with schemas, and table deletion&#10;&#10;next step: data collection - json - mysql&#10;&#10;next step: read data-adjust data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project01$database_connect_check.coverage" NAME="database_connect_check Coverage Results" MODIFIED="1711550601038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project01$database_connect_check.coverage" NAME="database_connect_check Coverage Results" MODIFIED="1711637328110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project01$input.coverage" NAME="input Coverage Results" MODIFIED="1711201687251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project01$test.coverage" NAME="test Coverage Results" MODIFIED="1711202935671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project01$test02.coverage" NAME="test02 Coverage Results" MODIFIED="1711465816896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project01$main.coverage" NAME="main Coverage Results" MODIFIED="1711555653604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project01$main.coverage" NAME="main Coverage Results" MODIFIED="1711638406950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project01$connection_cext.coverage" NAME="connection_cext Coverage Results" MODIFIED="1711186484764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/mysql/connector" />
   </component>
 </project>

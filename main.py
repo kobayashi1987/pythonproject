@@ -80,16 +80,32 @@ def main():
     # create_new_table(db_connection, "HR_Supervisor", hr_supervisor_schema)
     # create_new_table(db_connection, "Staff_Course", staff_course_schema)
 
-    # # This is the delete table part
-    # delete_table(db_connection, "Staff")
-    # delete_table(db_connection, "Courses")
-    # delete_table(db_connection, "HR_Officer")
-    # delete_table(db_connection, "Departments")
-    # delete_table(db_connection, "HR_Supervisor")
-    # delete_table(db_connection, "Staff_Course")
+    # This is the delete table part
+    # delete_all_tables_from_schema(db_connection)
 
 
 
+    # Define your schemas here
+    schemas = {
+        "Staff": staff_schema,
+        "Courses": courses_schema,
+        # Add more tables and their schemas as needed
+        "hr_officer": hr_officer_schema,
+        "departments": departments_schema,
+        "hr_supervisor": hr_supervisor_schema,
+        "staff_course": staff_course_schema,
+    }
+
+    for table_name, schema in schemas.items():
+        create_table_from_schema(db_connection, table_name, schema)
+        data = get_data_from_user(schema)
+        json_filename = f"{table_name.lower()}_data.json"
+        save_data_to_json(data, json_filename)
+        data_from_file = load_data_from_json(json_filename)
+        insert_data(db_connection, table_name, data_from_file)
+        print(f"Data for {table_name} inserted into the database.")
+
+    db_connection.close()
 
 
 
@@ -114,12 +130,9 @@ def main():
     #
     # print('Staff data has been collected, saved to a JSON file, and inserted into the database.')
 
+
+
     print("test github")
-
-
-
-
-
 
 
 

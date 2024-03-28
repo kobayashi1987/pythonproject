@@ -153,3 +153,64 @@ def test_mysql_connection(host_name, user_name, user_password, db_name):
             cursor.close()
             connection.close()
             print("MySQL connection is closed")
+
+
+
+## here are the new general functions 2024/03/28
+
+# insert data into database
+def insert_data(db_connection, table_name, data):
+    columns = ", ".join(data.keys())
+    placeholders = ", ".join(["%s"] * len(data))
+    insert_query = f"INSERT INTO {table_name} ({columns}) VALUES ({placeholders})"
+    cursor = db_connection.cursor()
+    cursor.execute(insert_query, tuple(data.values()))
+    db_connection.commit()
+    cursor.close()
+
+
+# save and load data to/from json file
+def save_data_to_json(data, filename='data.json'):
+    with open(filename, 'w') as file:
+        json.dump(data, file, indent=4)
+
+def load_data_from_json(filename='data.json'):
+    with open(filename, 'r') as file:
+        return json.load(file)
+
+
+# get data from user
+
+def get_data_from_user(schema):
+    data = {}
+    for column, details in schema.items():
+        if "AUTO_INCREMENT" not in details:  # Skip auto-increment fields
+            data[column] = input(f"Enter {column} ({details}): ")
+    return data
+
+
+# create table from schema
+
+def create_table_from_schema(db_connection, table_name, schema):
+    columns = ",\n  ".join([f"{column} {details}" for column, details in schema.items()])
+    create_table_query = f"""
+    CREATE TABLE IF NOT EXISTS {table_name} (
+      {columns}
+    )
+    """
+    cursor = db_connection.cursor()
+    cursor.execute(create_table_query)
+    db_connection.commit()
+    cursor.close()
+
+
+def delete_all_tables_from_schema(db_connection):
+    cursor = db_connection.cursor()
+    delete_table(db_connection, "Staff")
+    delete_table(db_connection, "Courses")
+    delete_table(db_connection, "HR_Officer")
+    delete_table(db_connection, "Departments")
+    delete_table(db_connection, "HR_Supervisor")
+    delete_table(db_connection, "Staff_Course")
+    print("all tables deleted")
+
