@@ -12,15 +12,6 @@ def main():
     # Connect to the database
     db_connection = connect_to_database()
 
-    # Create all the necessary tables
-    # All the codes for table creation should be used once only unless deleting them after testing
-
-
-    # This is the delete table part
-    # delete_table(db_connection, "Staff")
-    # delete_table(db_connection, "Courses")
-
-
 
     # create the Table Schema
 
@@ -84,6 +75,8 @@ def main():
     # delete_all_tables_from_schema(db_connection)
 
 
+    # here is the core part of the code: create table, get data, save into and read from json
+    # input into local mysql
 
     # Define your schemas here
     schemas = {

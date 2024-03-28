@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dce5be7c-0ab1-4a30-8039-2e202a799898" name="Changes" comment="table creation with schemas, and table deletion&#10;&#10;next step: data collection - json - mysql&#10;&#10;next step: read data-adjust data">
-      <change afterPath="$PROJECT_DIR$/courses_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/departments_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_officer_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_supervisor_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staff_course_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staff_data.json" afterDir="false" />
+    <list default="true" id="dce5be7c-0ab1-4a30-8039-2e202a799898" name="Changes" comment="function complete:&#10;&#10;taking data from user input&#10;&#10;save into json, then read from json&#10;&#10;input into mysql (create table, create records)&#10;&#10;next step:&#10;&#10;1 insert data &#10;2 retrieve data&#10;3 update data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +111,7 @@
       <workItem from="1711548291603" duration="36000" />
       <workItem from="1711548395128" duration="650000" />
       <workItem from="1711549082907" duration="6217000" />
-      <workItem from="1711637234995" duration="1351000" />
+      <workItem from="1711637234995" duration="2139000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -144,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711556535692</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="function complete:&#10;&#10;taking data from user input&#10;&#10;save into json, then read from json&#10;&#10;input into mysql (create table, create records)&#10;&#10;next step:&#10;&#10;1 insert data &#10;2 retrieve data&#10;3 update data">
+      <option name="closed" value="true" />
+      <created>1711638681823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711638681823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +167,8 @@
     <MESSAGE value="commit test" />
     <MESSAGE value="commit test github" />
     <MESSAGE value="table creation with schemas, and table deletion&#10;&#10;next step: data collection - json - mysql&#10;&#10;next step: read data-adjust data" />
-    <option name="LAST_COMMIT_MESSAGE" value="table creation with schemas, and table deletion&#10;&#10;next step: data collection - json - mysql&#10;&#10;next step: read data-adjust data" />
+    <MESSAGE value="function complete:&#10;&#10;taking data from user input&#10;&#10;save into json, then read from json&#10;&#10;input into mysql (create table, create records)&#10;&#10;next step:&#10;&#10;1 insert data &#10;2 retrieve data&#10;3 update data" />
+    <option name="LAST_COMMIT_MESSAGE" value="function complete:&#10;&#10;taking data from user input&#10;&#10;save into json, then read from json&#10;&#10;input into mysql (create table, create records)&#10;&#10;next step:&#10;&#10;1 insert data &#10;2 retrieve data&#10;3 update data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project01$database_connect_check.coverage" NAME="database_connect_check Coverage Results" MODIFIED="1711637328110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
