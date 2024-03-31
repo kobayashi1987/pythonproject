@@ -58,6 +58,13 @@ def main():
 
     }
 
+    # test_table_schema = {
+    #     "testID": "INT PRIMARY KEY",
+    #     "testName": "VARCHAR(50) NOT NULL",
+    #     "testUsername": "VARCHAR(50) NOT NULL",
+    #     "testPassword": "INT PRIMARY KEY",
+    # }
+
 
 
     # # Creating the Departments table, the following lines of codes could be only used once
@@ -82,11 +89,11 @@ def main():
     schemas = {
         "Staff": staff_schema,
         "Courses": courses_schema,
-        # Add more tables and their schemas as needed
         "hr_officer": hr_officer_schema,
         "departments": departments_schema,
         "hr_supervisor": hr_supervisor_schema,
         "staff_course": staff_course_schema,
+        # "Test_table": test_table_schema,
     }
 
     for table_name, schema in schemas.items():
@@ -100,33 +107,27 @@ def main():
 
     db_connection.close()
 
+    # ## retrieve the data
+    #
+    # print("now we are going to retrieve the data from certain tables")
+    # retrieve_data(db_connection, json_filename='retrieved_data.json')
+    # db_connection.close()
+
+    # insert data part
+    # enhanced_insert_data(db_connection)
+    # db_connection.close()
+
+    # update data part
+    # enhanced_update_data(db_connection)
+    # db_connection.close()
+
+    # delete data part
+
+    # enhanced_delete_data(db_connection)
+    # db_connection.close()
 
 
-    #
-    # # Get staff data from the user
-    # staff_data_from_user = get_staff_data_from_user()
-    #
-    # # Save the staff data to a JSON file
-    # save_data_to_json(staff_data_from_user)
-    #
-    # # Load the staff data from the JSON file
-    # staff_data_from_file = load_data_from_json()
-    #
-    # # Insert staff data into the database
-    # insert_multiple_staff_data(db_connection, staff_data_from_file)
-    #
-    # # Updating a staff member's department ID
-    # update_values = {"departmentID": "77"}  # New department ID
-    # condition = "staffID = 7"  # Assuming you want to update the staff with staffID 1
-    #
-    # update_table_record(db_connection, "Staff", update_values, condition)
-    #
-    # print('Staff data has been collected, saved to a JSON file, and inserted into the database.')
-
-
-
-    print("test github")
-
+    print("action done successfully")
 
 
 if __name__ == '__main__':

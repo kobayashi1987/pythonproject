@@ -1,9 +1,9 @@
 [
     {
-        "staffID": "1",
+        "staffID": 1,
         "staffName": "jack",
         "staffUsername": "jack01",
         "staffPassword": "jack123",
-        "departmentID": "11"
+        "departmentID": 11
     }
 ]

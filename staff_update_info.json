@@ -1,0 +1,10 @@
+{
+    "condition": "staffID = 3",
+    "updates": {
+        "staffID": "3",
+        "staffName": "new staff 3",
+        "staffUsername": "newstaff301",
+        "staffPassword": "newstaff30123",
+        "departmentID": "33"
+    }
+}

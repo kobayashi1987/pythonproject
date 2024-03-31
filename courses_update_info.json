@@ -1,0 +1,10 @@
+{
+    "condition": "course_id = 3",
+    "updates": {
+        "course_id": "24",
+        "course_name": "Information",
+        "category": "core",
+        "total_hours": "22",
+        "department_id": "22"
+    }
+}
